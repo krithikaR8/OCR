@@ -1,0 +1,97 @@
+h1 {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+h1:before, h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+   
+}
+h1:before {
+    margin-left: -50%;
+    text-align: right;
+}
+.color {
+    background-color: #f4f2f2;
+}
+* {
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left {
+    width: 45%;
+  }
+  
+  .right {
+    width: 55%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    border-radius: 5px;
+    height: 500px;
+  }
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    height: 500px;
+    overflow-y: auto;
+  }
+  
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .labe{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .inp{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: #f4f2f2;
+  }
+  .but{
+    float: right;
+    color :aliceblue;
+    background-color: gray;
+    border-radius: 5px;
+    width: 40%;
+    height: 30px;
+    border: none;
+    box-shadow: #f4f2f2;
+
+  }
